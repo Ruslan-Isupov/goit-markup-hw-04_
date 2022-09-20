@@ -372,7 +372,9 @@ background-color: #F5F4FA;
 .networks-link:hover .networks-icon {
     fill: var(--primary-background-color)
 }
-
+.networks-link:focus .networks-icon{
+    fill: var(--primary-background-color)
+}
 
 /* clients */
 .clients{
@@ -410,7 +412,9 @@ margin-top: 50px;
 .clients-link:hover .clients-icon {
     fill: var(--accent-color);
 }
-
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);
+}
 
 .clients-icon{
     width:106px;
@@ -547,16 +551,8 @@ line-height: 1.71;
     gap: 30px;
 
 }
-
-
-
-
-    
-
- 
 .portfolio-box {
     padding: 20px 24px;
-    
     border-bottom: 1px solid #ECECEC;
     border-left:1px solid #ECECEC; ;
     border-right:1px solid #ECECEC; ;
@@ -564,10 +560,10 @@ line-height: 1.71;
 }
 
 
-.portfolio-list{
+/* .portfolio-list{
     background-color: var(--primary-background-color);
     
-}
+} */
 
 .portfolio-button{
     display: block;
@@ -595,7 +591,7 @@ line-height: 1.71;
 }
 
 .portfolio-title{
-
+    color: var(--primary-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -609,6 +605,10 @@ line-height: 1.71;
 .portfolio-link{
     display:block;
 }
-.portfolio-link:hover,.portfolio-link:focus{
-box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+.portfolio-link:hover,.portfolio-link:focus {
+   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+}
+.portfolio-link:focus {
+    outline:none;
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
 }
